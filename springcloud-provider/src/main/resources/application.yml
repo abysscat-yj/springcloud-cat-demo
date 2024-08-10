@@ -1,0 +1,14 @@
+spring:
+    application:
+        name: helloService
+
+    # 可以不用配置，默认按本地8848端口连接
+#    cloud:
+#      nacos:
+#          discovery:
+#              server-addr: 127.0.0.1:8848
+#          username: nacos
+#          password: nacos
+
+server:
+    port: 9000
