@@ -1,0 +1,15 @@
+### GET hello/hi
+GET http://localhost:9000/api/hello/hi
+
+### GET hello/a
+GET http://localhost:9000/api/hello/a?name=cat
+
+### GET hello/c
+GET http://localhost:9000/api/hello/c?name=cat
+
+### GET user/list
+GET http://localhost:9000/api/user/list?name=cat
+
+### GET user/find
+GET http://localhost:9000/api/user/find?id=100
+

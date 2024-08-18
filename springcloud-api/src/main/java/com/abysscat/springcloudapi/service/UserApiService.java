@@ -1,7 +1,10 @@
-package com.abysscat.springcloudapi.contract;
+package com.abysscat.springcloudapi.service;
 
+import com.abysscat.springcloudapi.model.User;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 /**
  * user service api.
@@ -9,12 +12,12 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @Author: abysscat-yj
  * @Create: 2024/8/11 0:13
  */
-public interface UserServiceAPI {
+public interface UserApiService {
 
 	@GetMapping("/api/user/list")
-	String list(@RequestParam("name") String name);
+	List<User> list(@RequestParam("name") String name);
 
 	@GetMapping("/api/user/find")
-	String find(@RequestParam("name") String name);
+	User findById(@RequestParam("id") long id);
 
 }
